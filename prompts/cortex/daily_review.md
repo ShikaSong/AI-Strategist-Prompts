@@ -14,3 +14,14 @@
 
 # 证据溯源要求
 每一条新发现的事实必须引用具体的证据 ID。
+```
+
+### 用户提示词 (User Prompt)
+```jinja2
+【系统时间】：{{ current_date }}
+【待处理数据流】：
+1. 昨日计划执行反馈：{{ tasks_feedback }}
+2. 意识流日志：{{ sensory_logs }}
+3. 财务与社交变动：{{ finance_and_hearth }}
+
+请启动 Cortex 协议，推演我未来的行动指南。
