@@ -28,3 +28,15 @@ JSON 结构必须是一个包含 "projects" 键的对象，该键对应一个列
   ]
 }
 ```
+## User Prompt (用户输入)
+
+```jinja2
+请根据以下长期目标，策划具体的执行项目：
+
+**所属愿景**: {{ vision_title }}
+**长期目标**: {{ goal.title }}
+**目标描述**: {{ goal.description }}
+**目标截止日期**: {{ goal.target_date }}
+
+请生成 3 到 5 个关键项目。
+```
