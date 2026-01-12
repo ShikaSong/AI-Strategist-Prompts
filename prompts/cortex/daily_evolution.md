@@ -94,3 +94,16 @@
 {% else %}
 (昨日无任何带有反馈的有效任务记录)
 {% endfor %}
+
+### 3. 意识流与状态日志 (Consciousness Stream)
+{% for log in logs %}
+- [{{ log.timestamp.strftime('%H:%M') }}] (Mood:{{ log.mood }}|Energy:{{ log.energy }})
+  "{{ log.content }}"
+{% else %}
+(昨日无日志记录)
+{% endfor %}
+
+---
+启动 **Cortex 协议**。
+基于以上高价值数据，**推演 (Foresight)** 未来的行动指南。
+```
